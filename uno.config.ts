@@ -1,14 +1,5 @@
 import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local'
-import {
-  defineConfig,
-  presetAttributify,
-  presetIcons,
-  presetTypography,
-  presetWebFonts,
-  presetWind4,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetTypography, presetWebFonts, presetWind3, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
   shortcuts: [
@@ -16,7 +7,7 @@ export default defineConfig({
     ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
   ],
   presets: [
-    presetWind4(),
+    presetWind3(),
     presetAttributify(),
     presetIcons({
       scale: 1.2,
@@ -28,6 +19,7 @@ export default defineConfig({
         serif: 'DM Serif Display',
         mono: 'DM Mono',
       },
+      provider: 'fontshare',
       processors: createLocalFontProcessor(),
     }),
   ],
