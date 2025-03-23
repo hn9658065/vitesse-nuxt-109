@@ -31,7 +31,7 @@
 如果希望手动克隆并保持更干净的 Git 历史记录
 
 ```bash
-npx degit hn9658065/vitesse-nuxt my-nuxt-app
+npx degit hn9658065/vitesse-nuxt-109 my-nuxt-app
 cd my-nuxt-app
 pnpm i # 如果尚未安装 pnpm，请先运行：npm install -g pnpm
 ```
